@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class BackFace1 extends StatefulWidget {
+class Screendesign extends StatefulWidget {
 
   Widget childwidget;
-  BackFace1({required this.childwidget});
+  Screendesign({Key? key, required this.childwidget}) : super(key: key);
 
   @override
-  _BackFace1State createState() => _BackFace1State();
+  _ScreendesignState createState() => _ScreendesignState();
 }
 
-class _BackFace1State extends State<BackFace1> {
+class _ScreendesignState extends State<Screendesign> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -7,6 +7,6 @@ class Logopage extends StatelessWidget {
   const Logopage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return BackFace1(childwidget: Image.asset('images/sdi_logo.png',scale: 3,),);
+    return Screendesign(childwidget: Image.asset('images/sdi_logo.png',scale: 3,),);
   }
 }
