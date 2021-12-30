@@ -7,25 +7,12 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-
-  @override
-  void initState() {
-    super.initState();
-    Navigator.pushNamed(context, Logopage.id);
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: Instruction.id,
+      home: const Logopage(),
       routes: {
         Instruction.id:(context)=>const Instruction(),
       },
