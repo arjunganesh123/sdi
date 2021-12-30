@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sdi/screens/instructions.dart';
 import 'package:sdi/screens/logopage.dart';
 
 void main() {
@@ -24,9 +25,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: Logopage.id,
+      initialRoute: Instruction.id,
       routes: {
-        Logopage.id:(context)=>const Logopage(),
+        Instruction.id:(context)=>const Instruction(),
       },
     );
   }
