@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class Screen5 extends StatefulWidget {
-  static const String id='Screen5';
+class Instruction extends StatefulWidget {
+  static const String id='instructionscreen';
 
-  const Screen5({Key? key}) : super(key: key);
+  const Instruction({Key? key}) : super(key: key);
 
   @override
-  State<Screen5> createState() => _Screen5State();
+  State<Instruction> createState() => _InstructionState();
 }
 
-class _Screen5State extends State<Screen5> {
+class _InstructionState extends State<Instruction> {
   PageController j=PageController();
   int i=0;
   @override
