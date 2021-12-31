@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import 'loginpage.dart';
+
 class Instruction extends StatefulWidget {
   static const String id='instructionscreen';
 
@@ -55,7 +57,7 @@ class _InstructionState extends State<Instruction> {
                 const SizedBox(width: 20),
                 FlatButton(
                   onPressed: (){
-
+                    Navigator.pushNamed(context, Loginpage.id);
                   },
                   child: Container(
                     padding: const EdgeInsets.only(left: 50,right: 50,top: 10,bottom: 10),
@@ -69,7 +71,15 @@ class _InstructionState extends State<Instruction> {
                 ),
                 FlatButton(
                   onPressed: (){
-
+                    if(i>=2){
+                      Navigator.pushNamed(context, Loginpage.id);
+                    }
+                    else{
+                      setState(() {
+                        i++;
+                        j.animateToPage(i, duration: const Duration(milliseconds: 5), curve: Curves.linear);
+                      });
+                    }
                   },
                   child: Container(
                     padding: const EdgeInsets.only(left: 50,right: 50,top: 10,bottom: 10),

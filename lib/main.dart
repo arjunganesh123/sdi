@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sdi/screens/instructions.dart';
+import 'package:sdi/screens/loginpage.dart';
 import 'package:sdi/screens/logopage.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       home: const Logopage(),
       routes: {
         Instruction.id:(context)=>const Instruction(),
+        Loginpage.id:(context)=> const Loginpage(),
       },
     );
   }
