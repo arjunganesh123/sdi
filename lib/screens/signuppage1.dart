@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/screendesign.dart';
 import 'package:sdi/constants/widgetdesign.dart';
-
 import '../custom_icons_icons.dart';
 
-class Screen3 extends StatefulWidget {
-  static const String id='Screen3';
-  const Screen3({Key? key}) : super(key: key);
+class Signuppage1 extends StatefulWidget {
+  static const String id='Signuppage1';
+  const Signuppage1({Key? key}) : super(key: key);
 
   @override
-  _Screen3State createState() => _Screen3State();
+  _Signuppage1State createState() => _Signuppage1State();
 }
 
-class _Screen3State extends State<Screen3> {
+class _Signuppage1State extends State<Signuppage1> {
 
   final nameCtrl = TextEditingController();
   final mobCtrl = TextEditingController();
