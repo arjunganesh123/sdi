@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/screendesign.dart';
 import 'package:sdi/constants/widgetdesign.dart';
+import 'package:sdi/screens/signuppage2.dart';
 import '../custom_icons_icons.dart';
 
 class Signuppage1 extends StatefulWidget {
@@ -147,7 +148,7 @@ class _Signuppage1State extends State<Signuppage1> {
             FlatButton(
               onPressed: (){
                 if(validateValues(nameCtrl.text, mobCtrl.text, emailCtrl.text, passwdCtrl.text) == true && password!=null) {
-
+                        Navigator.pushNamed(context, Signuppage2.id);
                 }
                 else{
                   ScaffoldMessenger.of(context).showSnackBar(
