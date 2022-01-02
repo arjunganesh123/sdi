@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 
 import '../custom_icons_icons.dart';
 
-class Screen6 extends StatefulWidget {
-  static const String id='Screen6';
-  const Screen6({Key? key}) : super(key: key);
+class Profilepage extends StatefulWidget {
+  static const String id='Profilepage';
+  const Profilepage({Key? key}) : super(key: key);
 
   @override
-  _Screen6State createState() => _Screen6State();
+  _ProfilepageState createState() => _ProfilepageState();
 }
 
-class _Screen6State extends State<Screen6> {
+class _ProfilepageState extends State<Profilepage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
