@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/screendesign.dart';
 import 'package:sdi/constants/widgetdesign.dart';
+import 'package:sdi/screens/profilepage.dart';
 import 'package:sdi/screens/signuppage1.dart';
 
 import '../custom_icons_icons.dart';
@@ -53,7 +54,7 @@ class _LoginpageState extends State<Loginpage> {
             ),
             FlatButton(
               onPressed: (){
-                //TODO:
+                Navigator.pushNamed(context, Profilepage.id);
               },
               child: Container(
                 decoration: const BoxDecoration(
