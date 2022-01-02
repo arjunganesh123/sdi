@@ -5,15 +5,15 @@ import 'package:sdi/constants/widgetdesign.dart';
 
 import '../custom_icons_icons.dart';
 
-class Screen4 extends StatefulWidget {
-  static const String id='Screen4';
-  const Screen4({Key? key}) : super(key: key);
+class Signuppage2 extends StatefulWidget {
+  static const String id='Signuppage2';
+  const Signuppage2({Key? key}) : super(key: key);
 
   @override
-  _Screen4State createState() => _Screen4State();
+  _Signuppage2State createState() => _Signuppage2State();
 }
 
-class _Screen4State extends State<Screen4> {
+class _Signuppage2State extends State<Signuppage2> {
 
   final usnCtrl = TextEditingController();
   String semCtrl = '';
