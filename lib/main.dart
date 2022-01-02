@@ -4,6 +4,7 @@ import 'package:sdi/screens/instructions.dart';
 import 'package:sdi/screens/loginpage.dart';
 import 'package:sdi/screens/logopage.dart';
 import 'package:sdi/screens/signuppage1.dart';
+import 'package:sdi/screens/signuppage2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         Instruction.id:(context)=>const Instruction(),
         Loginpage.id:(context)=> const Loginpage(),
         Signuppage1.id:(context)=> const Signuppage1(),
+        Signuppage2.id:(context)=> const Signuppage2(),
       },
     );
   }
