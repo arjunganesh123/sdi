@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sdi/screens/paymentpage1.dart';
 
 class PaymentScreen extends StatelessWidget {
   static const String id='PaymentScreen';
@@ -36,6 +37,7 @@ class PaymentScreen extends StatelessWidget {
               const Text('<For any queries related to payment,\n\nyou can contact +918320279863 or\n\n\t\t\t\t\t\t\t\t\t\t\t+919902097631>\n',style: TextStyle(color: Colors.white,fontSize: 12)),
               FlatButton(
                 onPressed: (){
+                  Navigator.pushNamed(context, Paymentpage1.id);
                   //TODO:
                 },
                 child: Padding(

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/screendesign.dart';
 import 'package:sdi/constants/widgetdesign.dart';
+import 'package:sdi/screens/paymentpage.dart';
 
 import '../custom_icons_icons.dart';
 
@@ -238,7 +239,7 @@ class _Signuppage2State extends State<Signuppage2> {
             FlatButton(
               onPressed: (){
                 if(validateValues(usnCtrl.text,semCtrl,secCtrl, domainctrl)==true){
-
+                            Navigator.pushNamed(context, PaymentScreen.id);
                 }
                 //TODO:
               },
