@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Screen10 extends StatelessWidget {
-  static const String id='Screen10';
-  const Screen10({Key? key}) : super(key: key);
+class PaymentScreen extends StatelessWidget {
+  static const String id='PaymentScreen';
+  const PaymentScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
