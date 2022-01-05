@@ -2,15 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/widgetdesign.dart';
 
-class Screen7 extends StatefulWidget {
-  static const String id='Screen7';
-  const Screen7({Key? key}) : super(key: key);
+class AccountSettings extends StatefulWidget {
+  static const String id='AccountSettings';
+  const AccountSettings({Key? key}) : super(key: key);
 
   @override
-  _Screen7State createState() => _Screen7State();
+  _AccountSettingsState createState() => _AccountSettingsState();
 }
 
-class _Screen7State extends State<Screen7> {
+class _AccountSettingsState extends State<AccountSettings> {
 
   final nameCtrl = TextEditingController();
   final mobCtrl = TextEditingController();
