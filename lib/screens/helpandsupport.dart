@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sdi/constants/widgetdesign.dart';
+import 'package:sdi/screens/helpandsupport1.dart';
 
 class HelpAndSupport extends StatefulWidget {
   static const String id='HelpAndSupport';
@@ -99,7 +100,7 @@ class _HelpAndSupportState extends State<HelpAndSupport> {
                   padding: const EdgeInsets.only(left: 80,bottom: 30),
                   child: FlatButton(
                     onPressed: (){
-                      //TODO:
+                      Navigator.pushNamed(context, HelpAndSupport1.id);
                     },
                     child: Container(
                       decoration: const BoxDecoration(
