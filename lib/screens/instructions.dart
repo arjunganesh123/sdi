@@ -35,21 +35,19 @@ class _InstructionState extends State<Instruction> {
         color: Colors.white,
         child: Column(
           children: [
-            Container(
-              child: Center(
-                child:SmoothPageIndicator(
-                    count: 3,
-                    effect: const WormEffect(
-                      dotColor: Color(0xFFD8D8D8),
-                      activeDotColor: Color.fromRGBO(112, 112, 112, 1),
-                    ),
-                    controller: j,
-                    onDotClicked: (index){
-                      j.animateToPage(index, duration: const Duration(milliseconds: 500), curve: Curves.decelerate);
-                      i=index;
-                    }
-                ) ,
-              ),
+            Center(
+              child:SmoothPageIndicator(
+                  count: 3,
+                  effect: const WormEffect(
+                    dotColor: Color(0xFFD8D8D8),
+                    activeDotColor: Color.fromRGBO(112, 112, 112, 1),
+                  ),
+                  controller: j,
+                  onDotClicked: (index){
+                    j.animateToPage(index, duration: const Duration(milliseconds: 500), curve: Curves.decelerate);
+                    i=index;
+                  }
+              ) ,
             ),
             const SizedBox(height: 45),
             Row(
@@ -57,7 +55,7 @@ class _InstructionState extends State<Instruction> {
                 const SizedBox(width: 20),
                 FlatButton(
                   onPressed: (){
-                    Navigator.pushNamed(context, Loginpage.id);
+                    Navigator.pushNamedAndRemoveUntil(context, Loginpage.id, (route) => false);
                   },
                   child: Container(
                     padding: const EdgeInsets.only(left: 50,right: 50,top: 10,bottom: 10),
@@ -72,7 +70,7 @@ class _InstructionState extends State<Instruction> {
                 FlatButton(
                   onPressed: (){
                     if(i>=2){
-                      Navigator.pushNamed(context, Loginpage.id);
+                      Navigator.pushNamedAndRemoveUntil(context, Loginpage.id, (route) => false);
                     }
                     else{
                       setState(() {
@@ -154,7 +152,7 @@ class CustomClipPaths extends CustomClipper<Path>{
 
 }
 
-Widget page(String message1,String message2,double heigh,double widt){
+Widget page(String message1,String message2,double height,double width){
   return SafeArea(
     child: Stack(
       children: [
@@ -197,7 +195,7 @@ Widget page(String message1,String message2,double heigh,double widt){
                   Center(child: Text(message2,style: const TextStyle(color: Colors.white,fontSize: 15),)),
                 ],
               ),
-              height: heigh+100,width: widt,
+              height: height+100,width: width,
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,

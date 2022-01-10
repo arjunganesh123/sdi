@@ -20,6 +20,7 @@ class _LogopageState extends State<Logopage> {
   }
 
   _navigatetohome() async{
+    //TODO: navigation if user is logged in already
     await Future.delayed(const Duration(milliseconds: 1500),(){});
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Instruction()));
   }
